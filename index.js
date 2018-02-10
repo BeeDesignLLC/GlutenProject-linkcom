@@ -3,7 +3,7 @@ const {send} = require('micro')
 const {GraphQLClient} = require('graphql-request')
 const parse = require('url').parse
 const route = require('path-match')()
-const matchThrive = route('/thrive/:id')
+const matchThrive = route('/link/thrive/:id')
 
 const client = new GraphQLClient(
   'https://api.graph.cool/simple/v1/cjb9vgsrd1hlf0187xaxi7te1',
