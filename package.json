@@ -1,0 +1,17 @@
+{
+  "name": "linkcom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Brandon Bayer",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "micro"
+  },
+  "dependencies": {
+    "graphql-request": "^1.4.1",
+    "micro": "^9.1.0",
+    "parse": "^1.11.0",
+    "path-match": "^1.2.4"
+  }
+}

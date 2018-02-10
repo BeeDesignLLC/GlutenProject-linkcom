@@ -1,0 +1,9 @@
+{
+  "alias": [
+    "tgp-link"
+  ],
+  "env": {
+    "GRAPHQL_TOKEN": "@graphcool-token"
+  },
+  "public": true
+}
