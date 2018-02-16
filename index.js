@@ -25,6 +25,8 @@ const nutsQuery = `query NutsProduct($id: ID!){
 const thriveBase = 'http://www.kqzyfj.com/click-8542692-12982167?url='
 
 module.exports = async (req, res) => {
+  res.setHeader('X-Robots-Tag', 'noindex, nofollow')
+
   let Location = ''
 
   const thrive = matchThrive(parse(req.url).pathname)
