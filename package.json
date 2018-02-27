@@ -2,16 +2,21 @@
   "name": "linkcom",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Brandon Bayer",
+  "repository": "git@github.com:BeeDesignLLC/GlutenProject-linkcom.git",
+  "author": "Brandon Bayer <b@bayer.ws>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "micro"
+    "start": "micro",
+    "test": "exit"
   },
   "dependencies": {
     "graphql-request": "^1.4.1",
     "micro": "^9.1.0",
     "parse": "^1.11.0",
     "path-match": "^1.2.4"
+  },
+  "engines": {
+    "node": "9"
   }
 }
