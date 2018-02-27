@@ -42,9 +42,9 @@ encoding@^0.1.11:
   dependencies:
     iconv-lite "~0.4.13"
 
-graphql-request@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.4.1.tgz#0772743cfac8dfdd4d69d36106a96c9bdd191ce8"
+graphql-request@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/graphql-request/-/graphql-request-1.5.0.tgz#69b30a1767189fcba27f5c907c0a87339f90b5d8"
   dependencies:
     cross-fetch "1.1.1"
 
@@ -84,7 +84,7 @@ isarray@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
 
-micro@^9.1.0:
+micro@9.1.0:
   version "9.1.0"
   resolved "https://registry.yarnpkg.com/micro/-/micro-9.1.0.tgz#f2effba306639076e994c007c327dfc36a5185e9"
   dependencies:
@@ -104,7 +104,7 @@ node-fetch@1.7.3:
     encoding "^0.1.11"
     is-stream "^1.0.1"
 
-parse@^1.11.0:
+parse@1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/parse/-/parse-1.11.0.tgz#65a255cafc217c3f8ca24a036a8dc968ef363a64"
   dependencies:
@@ -112,7 +112,7 @@ parse@^1.11.0:
     ws "^3.3.1"
     xmlhttprequest "^1.7.0"
 
-path-match@^1.2.4:
+path-match@1.2.4:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/path-match/-/path-match-1.2.4.tgz#a62747f3c7e0c2514762697f24443585b09100ea"
   dependencies:
