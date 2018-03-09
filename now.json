@@ -4,7 +4,8 @@
     "tgp-link"
   ],
   "env": {
-    "GRAPHQL_TOKEN": "@graphcool-token"
+    "GRAPHQL_TOKEN": "@graphcool-token",
+    "SENTRY_DSN_LINKCOM": "@sentry-dsn-linkcom"
   },
   "public": true
 }

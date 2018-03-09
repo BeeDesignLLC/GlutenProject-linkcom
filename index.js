@@ -1,4 +1,11 @@
 //@prettier
+const raven = require('raven')
+raven
+  .config(process.env.SENTRY_DSN_LINKCOM, {
+    logger: 'server',
+    name: process.env.NOW_URL,
+  })
+  .install()
 const {send} = require('micro')
 const {GraphQLClient} = require('graphql-request')
 const parse = require('url').parse
@@ -19,9 +26,23 @@ const offerQuery = `query Offer($id: ID!){
 }`
 
 const thriveBase = 'http://www.kqzyfj.com/click-8542692-12982167?url='
-const walmartBase = 'http://linksynergy.walmart.com/deeplink?id=8loQjOHw*oo&mid=2149&murl='
+const walmartBase =
+  'http://linksynergy.walmart.com/deeplink?id=8loQjOHw*oo&mid=2149&murl='
 
-module.exports = async (req, res) => {
+const handleErrors = fn => async (req, res) => {
+  try {
+    return await fn(req, res)
+  } catch (err) {
+    raven.captureException(err, {req})
+    return send(
+      res,
+      500,
+      '<h3>On snap! This Gluten Project robot has suffered a heart attack! The founders have been notified and will investigate ASAP.</h3>',
+    )
+  }
+}
+
+module.exports = handleErrors(async (req, res) => {
   res.setHeader('X-Robots-Tag', 'noindex, nofollow')
   let Location = ''
 
@@ -54,4 +75,4 @@ module.exports = async (req, res) => {
   }
 
   return send(res, 404, '<h1>Link not found :(</h1>')
-}
+})
