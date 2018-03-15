@@ -1,7 +1,7 @@
 {
   "alias": [
-    "tgp-stage-link",
-    "tgp-link"
+    "tgp-link-stage",
+    "linkcom.glutenproject.com"
   ],
   "env": {
     "GRAPHQL_TOKEN": "@graphcool-token",
