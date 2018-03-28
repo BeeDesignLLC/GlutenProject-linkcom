@@ -25,7 +25,7 @@ const offerQuery = `query Offer($id: ID!){
   }
 }`
 
-const thriveBase = 'http://www.kqzyfj.com/click-8542692-12982167?url='
+const thriveBase = 'http://www.kqzyfj.com/click-8542692-13259174?url='
 const walmartBase =
   'http://linksynergy.walmart.com/deeplink?id=8loQjOHw*oo&mid=2149&murl='
 
