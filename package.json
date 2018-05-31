@@ -14,7 +14,7 @@
     "graphql-request": "1.5.1",
     "micro": "9.1.4",
     "path-match": "1.2.4",
-    "raven": "2.4.2"
+    "raven": "2.6.2"
   },
   "engines": {
     "node": "9"
