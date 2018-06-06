@@ -28,6 +28,7 @@ const offerQuery = `query Offer($id: ID!){
 const thriveBase = 'http://www.kqzyfj.com/click-8542692-13259174?url='
 const walmartBase =
   'http://linksynergy.walmart.com/deeplink?id=8loQjOHw*oo&mid=2149&murl='
+const tierraFarmSuffix = '?rfsn=1243153.258842'
 
 const handleErrors = fn => async (req, res) => {
   try {
@@ -58,6 +59,9 @@ module.exports = handleErrors(async (req, res) => {
         break
       case 'Walmart':
         Location = walmartBase + encodeURIComponent(url)
+        break
+      case 'Tierra Farm':
+        Location = url + tierraFarmSuffix
         break
       default:
         Location = url
