@@ -11,7 +11,7 @@
     "test": "exit"
   },
   "dependencies": {
-    "graphql-request": "1.6.0",
+    "graphql-request": "4.3.0",
     "micro": "9.3.3",
     "path-match": "1.2.4",
     "raven": "2.6.4"
